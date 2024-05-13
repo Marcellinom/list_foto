@@ -21,7 +21,7 @@ app.get('/all', (req, res) => {
 })
 
 app.post('/', function (req, res) {
-    let base64String = JSON.strinigify(req.body)
+    let base64String = JSON.stringify(req.body)
     let base64Image = base64String.split(';base64,').pop();
     fs.writeFile(path.join(process.cwd(),`uploads/${uuidv4()}.jpeg`), base64Image, {encoding: 'base64'}, function(err) {});
     return res.sendStatus(200)
