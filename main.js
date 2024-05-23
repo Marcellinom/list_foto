@@ -26,7 +26,7 @@ app.post('/', function (req, res) {
     fs.writeFile(path.join(process.cwd(),`uploads/${uuidv4()}.jpeg`), base64Image, {encoding: 'base64'}, function(err) {});
     return res.sendStatus(200)
 })
-const port = process.env.PORT | 3000
+const port = process.env.PORT | 8080
 app.listen(port, () => {
   console.log(`http://127.0.0.1:${port}`)
 })
