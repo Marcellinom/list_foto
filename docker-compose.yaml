@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  list-foto-sample-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: list-foto-sample-app
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    env_file:
+      - .env
+    volumes:
+      - ./:/var/www/app
