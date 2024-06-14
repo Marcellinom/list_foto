@@ -1,10 +1,10 @@
 {
     "terraform_repository_url":"git@github.com:Marcellinom/list_foto.git",
-    "terraform_entrypoint_dir":"list_foto/terraform/tiers/basic",
-    "script_entrypoint":"list_foto/terraform/tiers/basic/migrate.go",
+    "terraform_entrypoint_dir":"list_foto/terraform/tiers/premium",
+    "script_entrypoint":"list_foto/terraform/tiers/premium/migrate.go",
     "infrastructure_blueprint":[
        {
-          "compute":"pool"
+          "compute":"silo"
        }
     ]
  }

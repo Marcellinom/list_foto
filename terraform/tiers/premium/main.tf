@@ -2,7 +2,7 @@ provider "google" {
   project = var.provider_id
 }
 
-module "application" {
+module "compute" {
   source = "./cloudrun"
 
   tenant_id = var.tenant_id
