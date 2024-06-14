@@ -1,5 +1,5 @@
 provider "google" {
-  project = "marcell-424212"
+  project = var.google_project_id
 }
 
 module "application" {
