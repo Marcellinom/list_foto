@@ -5,10 +5,13 @@ provider "google" {
 module "compute" {
   source = "./cloudrun"
 
-  tenant_id = var.tenant_id
+  tenant_id = var.infrastructure_id
 }
 
 
 terraform {
-  backend "gcs" {}
+  backend "gcs" {
+    bucket = "saas-tfstate"
+    prefix = "infrastructure/ngetes-tabrakan"
+  }
 }

@@ -1,3 +1,3 @@
 variable "tenant_id" {
-  description = "id tenant nya (uuid)"
+  description = "id infrastructure nya (uuid)"
 }

@@ -1,5 +1,5 @@
 resource "google_cloud_run_service" "cloudrun" {
-  name     = "${var.tenant_id}-list-foto-basic"
+  name     = "${var.infrastructure_id_id}-list-foto-basic"
   location = "asia-southeast1"
 
   template {

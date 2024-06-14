@@ -5,7 +5,7 @@ provider "google" {
 module "compute" {
   source = "./cloudrun"
 
-  tenant_id = var.tenant_id
+  tenant_id = var.infrastructure_id
 }
 
 

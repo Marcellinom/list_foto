@@ -1,5 +1,5 @@
-variable "tenant_id" {
-  description = "id tenant nya (uuid)"
+variable "infrastructure_id" {
+  description = "id infrastructure nya (uuid)"
 }
 
 variable "provider_id" {}
