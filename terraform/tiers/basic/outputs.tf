@@ -1,5 +1,7 @@
 output "metadata" {
   value = {
-    compute = module.compute.compute_url
+    compute = {
+        compute_url = module.compute.compute_url
+    }
   }
 }
